@@ -15,8 +15,8 @@
           <div class="navbar-content">
             <a href="{% url 'home' %}" class="nav-logo">Nabin.</a>
             <div class="navbar-links">
-              <!-- {% comment %} <a href="{% url 'about' %}" class="nav-links">About</a>
-              <a href="{% url 'contact' %}" class="nav-links">Contact</a> {% endcomment %} -->
+              <a href="{% url 'about' %}" class="nav-links">About</a>
+              <!-- {% comment %} <a href="{% url 'contact' %}" class="nav-links">Contact</a> {% endcomment %} -->
               <a href="{% url 'blogs' %}" class="nav-links">Blogs</a>
             </div>
           </div>
@@ -29,22 +29,28 @@
         <h2 class="hero-title">Hi {{ user.username }}!</h2>
         <p><a href="{% url 'logout' %}" class="nav-links color-red">Log out</a></p>
       </div>
-      
+      <main>
+        <div class="container">
+          {% block content %}
+          {% endblock content %}
+        </div>
+      </main>
       {% else %}
       <p class="blog-card-subtitle">You are not logged in.</p>
-      <div class="flex mb-4">
+      <div class="flex">
         <a href="{% url 'login' %}" class="nav-links underline">Log In</a>
         {% endif %}
         <a href="{% url 'signup' %}" class="nav-links underline">Sign up</a>
       </div>
-
     </div>
-    <main>
-      <div class="container">
-        {% block content %}
-        {% endblock content %}
-      </div>
-    </main>
+    <div class="container">
+      {% block login %}
+      {% endblock login %}
+    </div>
+    <div class="container">
+      {% block signup %}
+      {% endblock signup %}
+    </div>
     <footer>
         <div class="container">
           <div class="footer">
