@@ -1,0 +1,45 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="hero-content">
+    <div class="hero-text">
+      <h1 class="hero-title">
+        {{title}}
+      </h1>
+      <p class="hero-para">{{paragraph_1}}</p>
+      <p class="hero-para">
+        {{paragraph_2}}
+      </p>
+    </div> 
+    <div class="hero-img">
+        {% load static %}
+        <img src="{{header_image.url}}" alt="" class="img-responsive">
+    </div>
+
+  </div>
+  <div class="skills">
+    <h5>Skills</h5>
+    <div>
+      <p>{{skill_1}}</p>
+      <p>{{skill_2}}</p>
+    </div>
+  </div>
+  <div class="softwares">
+    <h5>Tools</h5>
+    <div>
+      <p>{{tools}}</p>
+      </p>
+     
+    </div>
+  </div>
+
+  <hr class="line">
+  <div class="contact">
+    <h2>Get in touch with me &rarr; </h2>
+    <div class="contact-links">
+      <a href="mailto:makifkarasu@gmail.com">Nabin.1@gmail.com</a>
+      <a href="#" target="_blank">View Resume</a>
+  </div>
+</div>
+{% endblock content %}
