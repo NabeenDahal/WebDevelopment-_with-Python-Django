@@ -1,7 +1,6 @@
-<!-- #blogs/blog_create.html -->
-{% extends 'base.html' %} 
+{% extends 'blogs/my_blogs.html' %} 
 {% block content %}
-<h1 class="hero-title" >Create a new blog</h1>
+<h1 class="hero-title">Create a new blog</h1>
 <div>
   <form action="" method="POST" class="form" enctype="multipart/form-data">
     {% csrf_token %} 

@@ -41,8 +41,6 @@ class BlogCreateView(LoginRequiredMixin,CreateView): # new
     #form_class = BlogForm
     template_name = 'blogs/blog_create.html'
     fields = ['title','subtitle', 'body','header_image']   #or fields = '__all__'
-    success_url = reverse_lazy('my_blogs') 
-
     
     def form_valid(self, form): # new
         form.instance.author = self.request.user
@@ -72,4 +70,4 @@ class BlogDeleteView(LoginRequiredMixin,UserPassesTestMixin,DeleteView): # new
         return obj.author == self.request.user  
 
 def profile(request):
-    return render(request, 'blogs/profile.html') 
+    return render(request, 'blogs/profile.html')   

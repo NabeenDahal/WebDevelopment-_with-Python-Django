@@ -8,7 +8,7 @@
   box-sizing: border-box;
 }
 html {
-  font-size: 62.5%;
+  font-size: 62.5%; /* 1rem = 10px */
   scroll-behavior: smooth;
 }
 body {
@@ -20,9 +20,9 @@ body {
   margin: 0 auto;
 }
 
-.img-responsive{
-    max-width: 100%;
-    height: auto;
+.img-responsive {
+  max-width: 100%;
+  height: auto;
 }
 
 /* header starts */
@@ -52,38 +52,7 @@ body {
 .nav-logo {
   font-size: 3.4rem;
 }
-.nav-logo{
-  border-bottom: 1px solid #453886;
-  color: #453886;
-  padding-bottom: .25em;
-  text-decoration: none;
-}
 
-.nav-logo:hover {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E %3Cpath fill='none' stroke='%23453886' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
-  background-position: bottom;
-  background-repeat: repeat-x;
-  background-size: 20%;
-  border-bottom: 0;
-  padding-bottom: .3em;
-  text-decoration: none;
-}
-.nav-links{
-  border-bottom: 1px solid #453886;
-  color: #453886;
-  padding-bottom: .25em;
-  text-decoration: none;
-}
-
-.nav-links:hover {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E %3Cpath fill='none' stroke='%23453886' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
-  background-position: bottom;
-  background-repeat: repeat-x;
-  background-size: 20%;
-  border-bottom: 0;
-  padding-bottom: .3em;
-  text-decoration: none;
-}
 /* header ends */
 
 /* hero starts */
@@ -94,8 +63,8 @@ body {
   margin-bottom: 10rem;
 }
 
-.hero-text{
-    max-width: 75rem;
+.hero-text {
+  max-width: 75rem;
 }
 
 .hero-title {
@@ -121,7 +90,8 @@ body {
 
 /*software and skills starts */
 
-.skills,.softwares {
+.skills,
+.softwares {
   display: flex;
   gap: 3rem;
 }
@@ -164,150 +134,153 @@ body {
 
 /*software and skills ends */
 
-
 /* contact starts */
 .contact {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 7.8rem;
-    margin-bottom: 19rem;
-  }
+  display: flex;
+  justify-content: space-between;
+  margin-top: 7.8rem;
+  margin-bottom: 19rem;
+}
 .contact h2 {
-    font-family: "DM Sans", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 3.2rem;
-    color: #181717;
-    max-width: 19ch;
-  }
-  
-  .contact-links a:nth-child(1) {
-    font-family: "DM Sans", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 3.2rem;
-    color: #181717;
-    text-decoration: none;
-    display: block;
-    margin-bottom: 2.8rem;
-  }
-  .contact-links a:nth-child(2) {
-    font-family: "Inter", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.8rem;
-    color: #181717;
-    text-decoration: none;
-  }
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 3.2rem;
+  color: #181717;
+  max-width: 19ch;
+}
+
+.contact-links a:nth-child(1) {
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 3.2rem;
+  color: #181717;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 2.8rem;
+}
+.contact-links a:nth-child(2) {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.8rem;
+  color: #181717;
+  text-decoration: none;
+}
 
 /* contact ends */
 
-
 /* footer starts */
 .footer {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 5rem;
-  }
-  
-  .footer h6 {
-    font-family: "DM Sans", sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 2.2rem;
-    color: #2429af;
-  }
-  
-  .social-links {
-    display: flex;
-    gap: 3rem;
-  }
-  .social-link {
-    font-family: "DM Sans", sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 2.1rem;
-    color: #181717;
-    text-decoration: none;
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5rem;
+}
+
+.footer h6 {
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2.2rem;
+  color: #2429af;
+}
+
+.social-links {
+  display: flex;
+  gap: 3rem;
+}
+.social-link {
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2.1rem;
+  color: #181717;
+  text-decoration: none;
+}
+
 /* footer ends */
 
 /* blog page css starts */
+.blogs{
+  min-height: 80vh;
+  /* max-width: 50vw; */
+}
 
 .blog-card {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    margin-bottom: 5rem;
-  }
-  
-  .blog-card-title,
-  .blog-card-subtitle,
-  .blog-card-para,
-  .blog-card-link {
-    font-family: "Inter", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 1.8rem;
-    color: #181717;
-  }
-  
-  .blog-card-title {
-    font-size: 4.2rem;
-    text-transform: uppercase;
-    font-weight: 500;
-    margin-bottom: 2.5rem;
-  }
-  
-  .blog-card-subtitle {
-    margin-bottom: 3.5rem;
-  }
-  
-  .blog-card-para {
-    font-size: 3rem;
-    line-height: 1.4;
-    color: #606060;
-    margin-bottom: 2rem;
-  }
-  
-  .blog-card-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  
-  .blog-card-link{
-    font-weight: 500;
-    text-decoration: underline;
-    margin-bottom: 3rem;
-  }
-  
-  .card{
-    margin-top: 114px;
-    margin-bottom: 114px;
-  }
-  
-  .color-grey{
-    color: #606060;
-  }
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 5rem;
+}
 
-  .underline{
-    text-decoration: underline;
-  }
+.blog-card-title,
+.blog-card-subtitle,
+.blog-card-para,
+.blog-card-link {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.8rem;
+  color: #181717;
+}
 
-  .mb-4{
-    margin-bottom: 4rem;
-    display: inline-block;
-  }
+.blog-card-title {
+  font-size: 4.2rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 2.5rem;
+}
 
-  /* blog page css emds */
+.blog-card-subtitle {
+  margin-bottom: 3.5rem;
+}
+
+.blog-card-para {
+  font-size: 3rem;
+  line-height: 1.4;
+  color: #606060;
+  margin-bottom: 2rem;
+}
+
+.blog-card-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.blog-card-link {
+  font-weight: 500;
+  texxt-decoration: underline;
+  margin-bottom: 3rem;
+}
+
+.card {
+  margin-top: 114px;
+  margin-bottom: 114px;
+}
+
+.color-grey {
+  color: #606060;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.mb-4 {
+  margin-bottom: 4rem;
+  display: inline-block;
+}
 
 .flex {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
 }
+
+/* blog page css emds */
+
 
 /* form styling starts */
 
@@ -322,9 +295,24 @@ body {
 .form label{
   font-family: "DM Sans", sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 500;
   font-size: 1.8rem;
   color: #181717;
+}
+.form input{
+
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid #181717;
+  background: transparent;
+  color: #181717;
+  font-size: 1.8rem;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  padding: 0.5rem;
+  width: 100%;
+  margin-bottom: 1.5rem;
+
 }
 
 
@@ -336,7 +324,7 @@ body {
   color: #181717;
   font-size: 1.8rem;
   font-family: "DM Sans", sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   padding: 0.5rem;
   width: 100%;
   margin-bottom: 1.5rem;
@@ -358,37 +346,13 @@ body {
   max-width: 15%;
 }
 
-.btn:hover {background-color: #3e8e41}
-
-.btn:active {
-  background-color: #3e8e41;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-}
-
-/* form styling ends */
-
-.form input{
-
-  border-radius: 0;
-  border: none;
-  border-bottom: 1px solid #181717;
-  background: transparent;
-  color: #181717;
-  font-size: 1.8rem;
-  font-family: "DM Sans", sans-serif;
-  font-weight: 400;
-  padding: 0.5rem;
-  width: 100%;
-  margin-bottom: 1.5rem;
-
-}
-
 .color-red{
-  color: red;
+  color: #ff0000;
 }
-
 .img-responsive {
   max-width: 100%;
   height: auto;
 }
+
+
+/* form styling ends */
