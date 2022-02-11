@@ -1,22 +1,11 @@
-#config/urls.py
-
-from django.contrib import admin
-from django.urls import path,include
-from django.conf import settings
-from django.conf.urls.static import static
-
-urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('',include('blog.urls')),
-    path('api/',include('api.urls')) #new
-]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-
-
-#api/urls.py
 from django.urls import path
-from .views import BlogAPIView,BlogDetailAPIView
+from .views import BlogListAPIView,BlogDetailAPIView,BlogCreateAPIView,BlogUpdateAPIView,BlogDeleteAPIView,BlogRetrieveAPIView
 
 urlpatterns = [
-    path('', BlogAPIView.as_view()),
-    path('<int:pk>', BlogDetailAPIView.as_view()),
+    path('', BlogListAPIView.as_view()),
+    path('<int:pk>', BlogRetrieveAPIView.as_view()),
+    path('create/', BlogCreateAPIView.as_view()),
+    path('update/<int:pk>', BlogUpdateAPIView.as_view()),
+    path('delete/<int:pk>', BlogDeleteAPIView.as_view()),
+    path('detail/<int:pk>', BlogDetailAPIView.as_view()),
 ]
